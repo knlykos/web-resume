@@ -1,0 +1,52 @@
+.getintouch--screen {
+  position: fixed;
+  background: #ff6e6e;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #ff6e6e;
+  transform: translateY(100%);
+
+  // overflow: ;
+}
+
+// .button--getintouch {
+//   height: 0;
+//   width: 0;
+//   border-radius: 100%;
+//   background: #ff6e6e;
+// }
+
+button {
+  border: 1px solid #ff6e6e;
+  background-color: #1e1d2e;
+  color: #ffffffcb;
+  padding: 15px 20px;
+  font-weight: 900;
+  &:focus {
+    outline: none;
+    border: 1px solid #ff6e6e;
+  }
+}
+
+svg path {
+  fill: "rgba(255,255,255,80%)";
+}
+#frame {
+  stroke-width: 4;
+  stroke: #ff6e6ecb;
+  fill: none;
+  stroke-dashoffset: 0;
+  stroke-dasharray: 100;
+}
+
+#name {
+  stroke: #ffffffcb;
+  stroke-width: 1px;
+  fill: none;
+  font-size: 40px;
+  font-family: "Kaushan Script", cursive;
+  stroke-dashoffset: 0;
+  stroke-dasharray: 100;
+}

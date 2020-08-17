@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "nefi-lopez-resume"
+    }
+  },
+  "defaultProject": "nefi-lopez-resume",
+  "cli": {
+    "analytics": "f442840f-9630-451f-98ef-61a751a8b657"
+  }
 }

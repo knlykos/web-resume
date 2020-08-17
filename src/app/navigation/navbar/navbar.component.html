@@ -1,0 +1,48 @@
+<div
+  style="
+    height: 55px;
+    width: 100%;
+    box-shadow: -1px 8px 26px -4px rgba(0, 0, 0, 0.178);
+
+   "
+></div>
+<div class="button__open" (click)="toggleNavbar()" *ngIf="navbarState === 0">
+  <svg
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:cc="http://creativecommons.org/ns#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:svg="http://www.w3.org/2000/svg"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="2"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    class="feather feather-menu"
+    version="1.1"
+    id="svg8"
+    sodipodi:docname="menu.svg"
+    inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
+  >
+    <line x1="3" y1="12" x2="21" y2="12" id="center" />
+    <line x1="3" y1="6" x2="21" y2="6" id="top" />
+    <line x1="3" y1="18" x2="21" y2="18" id="bottom" />
+  </svg>
+</div>
+<nav id="navbar" style="transform: translateX(100%);" class="navbar__mobile">
+  <!-- <div><img src="" alt="" /></div> -->
+  <span class="button__close" (click)="toggleNavbar()"
+    ><img src="assets/images/icons/x.svg" alt=""
+  /></span>
+  <ul class="menu__list">
+    <li>HOME</li>
+    <li>PORTFOLIO</li>
+    <li>CONTACT</li>
+  </ul>
+</nav>
+<!-- {{ this.navbarState }} -->
