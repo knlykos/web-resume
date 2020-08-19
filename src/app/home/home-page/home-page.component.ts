@@ -7,8 +7,7 @@ import {
   AfterViewInit,
 } from '@angular/core';
 import anime from 'animejs/lib/anime.es';
-import { SVG } from '@svgdotjs/svg.js';
-import gspa from 'gsap';
+
 @Component({
   selector: 'app-home-page',
   templateUrl: './home-page.component.html',
@@ -23,53 +22,7 @@ export class HomePageComponent implements OnInit, AfterViewInit {
 
   ngAfterViewInit() {
     // gspa.to('#name', { duration: 5, x: 200 });
-    const animeRect = anime
-      .timeline({
-        targets: '#frame',
-        strokeDashoffset: [100, 0],
-        easing: 'easeInOutSine',
-        duration: 5000,
-        direction: 'alternate',
-        loop: false,
-      })
-      .add({
-        targets: '#frame',
-        strokeDasharray: [1000],
-        easing: 'easeOutSine',
-        direction: 'alternate',
-        loop: false,
-      });
-    const animationText = anime
-      .timeline({
-        targets: '#name',
-        strokeDashoffset: [300, 0],
-        easing: 'easeInOutSine',
-        duration: 1500,
-        direction: 'alternate',
-        loop: false,
-      })
-      .add({
-        fill: 'rgba(255,255,255,80%)',
-        duration: 1500,
-        easing: 'easeInOutSine',
-        direction: 'alternate',
-        strokeOpacity: '0',
-      });
 
-    animationText.finished.then((res) => {
-      console.log(res);
-    });
-    // animationText.finished.then((res) => {
-    //   anime({
-    //     targets: '#frame',
-    //     strokeDashoffset: [300, 1000],
-    //     strokeDasharray: [0],
-    //     easing: 'easeOutSine',
-    //     duration: 1500,
-    //     direction: 'alternate',
-    //     loop: false,
-    //   });
-    // });
   }
 
   async getInTouch() {
