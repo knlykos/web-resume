@@ -21,8 +21,31 @@ export class HomePageComponent implements OnInit, AfterViewInit {
   ngOnInit(): void {}
 
   ngAfterViewInit() {
+    this.promtFn();
     // gspa.to('#name', { duration: 5, x: 200 });
+  }
 
+  promtFn() {
+    anime
+      .timeline({
+        targets: '#promt',
+        loop: true,
+        opacity: 0,
+        duration: 500,
+        easing: 'linear',
+        direction: 'alternate',
+        delay: function (el, i) {
+          return i * 500;
+        },
+      })
+      .add({
+        opacity: 1,
+        easing: 'linear',
+        duration: 500,
+        delay: function (el, i) {
+          return i * 500;
+        },
+      });
   }
 
   async getInTouch() {
@@ -65,4 +88,6 @@ export class HomePageComponent implements OnInit, AfterViewInit {
     });
     await getInTouchAnime.finished;
   }
+
+  async animationStatePointer() {}
 }

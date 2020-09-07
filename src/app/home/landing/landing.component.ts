@@ -18,8 +18,8 @@ import {
   animations: [
     trigger('state', [
       state('void, hidden', style({ display: 'none' })),
-      state('showing', style({ display: 'absolute', opacity: 0 })),
-      state('visible', style({ display: 'absolute' })),
+      state('showing', style({ display: 'flex', opacity: 0 })),
+      state('visible', style({ display: 'flex' })),
       transition('visible => void, visible => hidden', [
         animate(
           `0s ${AnimationCurves.ACCELERATION_CURVE}`,
@@ -34,7 +34,7 @@ import {
         animate(
           `0s ${AnimationCurves.ACCELERATION_CURVE}`,
           style({
-            display: 'absolute',
+            display: 'flex',
           })
         ),
       ]),

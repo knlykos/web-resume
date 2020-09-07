@@ -1,80 +1,30 @@
-.navbar__mobile {
-  position: fixed;
+// :host {
+//   display: flex;
+//   border: 1px solid black;
+//   background: red;
+//   height: 50px;
+//   width: 50px;
+// }
+.navbarComponent {
   display: flex;
-  height: 100%;
+  // border: 5px solid black;
+  // background: red;
+  height: 150px;
   width: 100%;
-  top: 0px;
+  background: #1e1d2e;
 
-  // transform: translateX(100%);
-
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-  background: #6a888c;
-  ul {
-    list-style-type: none;
-    padding: 0px;
-    text-align: center;
-    li {
-      font-size: 1.2em;
-      height: 4em;
-      font-family: "Rowdies", cursive;
-      color: #32d9cb
-      // color: #a5e65a;
-      // color: #00a6c0;
+  // padding: 5px 15px;
+  & > div {
+    padding: 5px 25px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    & > * {
+      padding: 0px 15px;
     }
   }
-  a {
-    color: white;
-    text-decoration: none;
-  }
-
-  .button__close {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    color: rgb(255, 110, 110);
-  }
 }
 
-// .button__menu::before {
-//   content: "<div>123123</div>";
+// .navbarComponent > * {
+//   padding: 0 5px;
 // }
-.button__open {
-  z-index: 1;
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  color: rgb(255, 110, 110);
-}
-
-.nav-icon {
-  margin: 1em;
-  width: 40px;
-}
-
-.nav-icon:after,
-.nav-icon:before,
-.nav-icon div {
-  background: red;
-  border-radius: 3px;
-  content: "";
-  display: block;
-  height: 5px;
-  margin: 7px 0;
-  transition: all .2s ease-in-out;
-}
-
-
-.nav-icon:hover:before {
-  transform: translateY(12px) rotate(135deg);
-}
-
-.nav-icon:hover:after {
-  transform: translateY(-12px) rotate(-135deg);
-}
-
-.nav-icon:hover div {
-  transform: scale(0);
-}

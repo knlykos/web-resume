@@ -1,16 +1,57 @@
-<svg width="200" height="70">
+<!-- {{
+  {
+    "frame-logo": mode === "logo",
+    "frame-landing": mode === "landing"
+  } | json
+}} -->
+<svg [ngStyle]="{ width: svgWidth }" height="70" viewBox="0 0 200 70">
   <!-- <rect id="frame" width="200" height="70" /> -->
-  <path id="frame" d="M100,0 200,0 200,35" stroke="red" stroke-width="5" />
-  <path id="frame" d="M100,0 0,0 0,35" stroke="red" stroke-width="5" />
-  <path id="frame" d="M100,70, 0,70 0,35" stroke="red" stroke-width="5" />
-  <path id="frame" d="M100,70 200,70 200,35" stroke="red" stroke-width="5" />
+  <path
+    [ngClass]="{
+      'frame-logo': mode === 'logo',
+      'frame-landing': mode === 'landing'
+    }"
+    d="M100,0 200,0 200,35"
+    stroke="red"
+    stroke-width="5"
+  />
+  <path
+    [ngClass]="{
+      'frame-logo': mode === 'logo',
+      'frame-landing': mode === 'landing'
+    }"
+    d="M100,0 0,0 0,35"
+    stroke="red"
+    stroke-width="5"
+  />
+  <path
+    [ngClass]="{
+      'frame-logo': mode === 'logo',
+      'frame-landing': mode === 'landing'
+    }"
+    d="M100,70, 0,70 0,35"
+    stroke="red"
+    stroke-width="5"
+  />
+  <path
+    [ngClass]="{
+      'frame-logo': mode === 'logo',
+      'frame-landing': mode === 'landing'
+    }"
+    d="M100,70 200,70 200,35"
+    stroke="red"
+    stroke-width="5"
+  />
   <text
     x="50%"
     y="50%"
-    id="name"
+    [ngClass]="{
+      'name-logo': mode === 'logo',
+      'name-landing': mode === 'landing'
+    }"
     dominant-baseline="middle"
     text-anchor="middle"
   >
-    Nefi Lopez
+    NEFI LOPEZ
   </text>
 </svg>

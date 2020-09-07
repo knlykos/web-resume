@@ -1,40 +1,47 @@
-<app-landing></app-landing>
+<!-- <app-landing></app-landing> -->
 <app-navbar></app-navbar>
-<app-logo></app-logo>
-<div style="padding: 25px;">
-  <p style="font-weight: 600;">
-    Hola soy
-  </p>
-  <!-- <div
-    id="name"
+<!-- <app-logo [mode]="'logo'"></app-logo> -->
+<div style="padding: 25px; font-weight: 600; font-family: Unica One">
+  <div
     style="
-      font-family: 'Kaushan Script', cursive;
-      font-weight: 900;
-      font-size: 3.5em;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
     "
   >
-    Nefi Lopez
-  </div> -->
-  <!-- <svg width="200" height="70">
-    <path id="frame" d="M100,0 200,0 200,35" stroke="red" stroke-width="5" />
-    <path id="frame" d="M100,0 0,0 0,35" stroke="red" stroke-width="5" />
-    <path id="frame" d="M100,70, 0,70 0,35" stroke="red" stroke-width="5" />
-    <path id="frame" d="M100,70 200,70 200,35" stroke="red" stroke-width="5" />
-    <text
-      x="50%"
-      y="50%"
-      id="name"
-      dominant-baseline="middle"
-      text-anchor="middle"
+    <div
+      style="
+        width: 310px;
+        height: 310px;
+        background: #ff6e6e;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      "
     >
-      Nefi Lopez
-    </text>
-  </svg> -->
+      <img
+        src="/assets/images/profile.jpeg"
+        style="width: 300px; opacity: 80%"
+        alt=""
+      />
+    </div>
+    <p style="padding-left: 2em; font-size: 4.5em; letter-spacing: -2px">
+      <span style="color: #ff6e6e">></span> SOY
+      <br />
+      NEFI LOPEZ
+      <br />
+      FULL STACK DEVELOPER
+      <span id="promt">|</span>
+    </p>
+    <br />
+  </div>
+</div>
+<div style="padding: 25px">
   <h3>Dejame contarte algo sobre mi</h3>
-  <p>
-    He trabajado por 13 años en áreas relacionadas con computadoras, desde
-    soporte técnico, administrador de sistemas, hasta desarrollo de software.
-  </p>
+  <p style="font-size: 20px">Amo escribir software</p>
   <p>
     Desde corta edad siempre soñé hacer software, aquí estoy escribiendo código
     y es mi mayor pasión.
@@ -49,7 +56,7 @@
   </div>
 </div>
 
-<div style="padding: 25px;">
+<div style="padding: 25px">
   <h2>Tecnologias</h2>
 
   <ul>
@@ -70,9 +77,7 @@
   <h2>Experiencia Laboral</h2>
   <div>
     <div>
-      <p>
-        Calimax
-      </p>
+      <p>Calimax</p>
       <p>Desarrollador de Apps Web y Moviles</p>
       <p>2018 - 2020</p>
       <ul>
@@ -88,9 +93,7 @@
       </ul>
     </div>
     <div>
-      <p>
-        Calimax
-      </p>
+      <p>Calimax</p>
       <p>Desarrollador de Apps Web y Moviles</p>
       <p>2018 - 2020</p>
       <ul>
@@ -106,9 +109,7 @@
       </ul>
     </div>
     <div>
-      <p>
-        Calimax
-      </p>
+      <p>Calimax</p>
       <p>Desarrollador de Apps Web y Moviles</p>
       <p>2018 - 2020</p>
       <ul>
@@ -135,7 +136,7 @@
 </div>
 <div></div>
 <div class="getintouch--screen">
-  <h2 style="color: #1e1d2e;">Contactame</h2>
+  <h2 style="color: #1e1d2e">Contactame</h2>
   <p (click)="closeGetInTouch()">Cerrar</p>
   <input type="text" />
 </div>

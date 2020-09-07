@@ -1,4 +1,22 @@
-#frame {
+.frame-logo {
+
+  stroke-width: 4;
+  stroke: #ff6e6ecb;
+  fill: none;
+  stroke-width: 0;
+}
+
+.name-logo {
+  stroke: #ffffffcb;
+  stroke-width: 1px;
+  fill: none;
+  font-size: 43px;
+  font-family: "Unica One", cursive;
+  stroke-width: 2;
+  fill: #ffffffcb;
+}
+
+.frame-landing {
   stroke-width: 4;
   stroke: #ff6e6ecb;
   fill: none;
@@ -6,12 +24,12 @@
   stroke-dasharray: 100;
 }
 
-#name {
+.name-landing {
   stroke: #ffffffcb;
   stroke-width: 1px;
   fill: none;
-  font-size: 40px;
-  font-family: "Kaushan Script", cursive;
+  font-size: 43px;
+  font-family: "Unica One", cursive;
   stroke-dashoffset: 0;
   stroke-dasharray: 100;
 }

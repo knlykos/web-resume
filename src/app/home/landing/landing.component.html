@@ -10,7 +10,11 @@
     background-color: #171622;
     align-items: center;
     justify-content: center;
+    z-index: 2;
   "
 >
-  <app-logo (animationEnded)="animationLogoDone($event)"></app-logo>
+  <app-logo
+    [mode]="'landing'"
+    (animationEnded)="animationLogoDone($event)"
+  ></app-logo>
 </div>

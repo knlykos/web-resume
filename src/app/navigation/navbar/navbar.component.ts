@@ -1,9 +1,13 @@
-import { Component, OnInit, AfterViewInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import anime from 'animejs/lib/anime.es';
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.scss'],
+  encapsulation: ViewEncapsulation.None,
+  host: {
+    class: 'navbarComponent',
+  },
 })
 export class NavbarComponent implements OnInit {
   navbarState: number = 0;
@@ -34,7 +38,6 @@ export class NavbarComponent implements OnInit {
       anime({
         targets: 'svg #center',
         width: '1px',
-
       });
       anime({
         targets: 'svg #top',
